@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700');
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Titillium Web', sans-serif;
+   text-decoration: none;
+}
+.container {
+    font-size:1em;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+}
+section,aside {
+    padding: 10px;
+    background:#F4FCFF;
+    -moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;border-radius:5px;
+}
+section {
+    float: left;
+    width: 70%;
+}
+img{
+    position: relative;
+    width: 70%;
+}
+aside {
+    float: right;
+    width: 25%;
+}
+nav {
+    overflow: hidden;
+    background-color: #000F25;
+}
+nav ul {
+    float:none;
+    clear:both;
+    list-style-type:none;
+    padding:0px;
+}
+nav ul li{
+    padding: 20px;
+    font-size: 17px;
+}nav a{
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+nav ul :hover{
+	color: #42D4FF;
+}
+nav ul li {
+    float:left;
+    padding:3px 10px;
+    margin:2px;
+}
+aside ul li {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+}
+aside ul :hover{
+	color: #42D4FF;
+}
+footer {
+    margin:10px;
+    text-align:center;
+    clear:both;
+}
+
+/* para 980px o menos */
+@media screen and (max-width:980px) {
+    .container {
+        width:98%;
+    }
+    section {
+        width:68%;
+    }
+}
+
+/* para 700px o menos */
+@media screen and (max-width:700px) {
+    aside,section {
+        float:none;
+        width:96%;
+    }
+    nav, section {
+        font-size:1.2em;
+    }
+    aside {
+        margin-top:5px;
+    }
+    nav ul {
+        float:none;
+        clear:both;
+    }
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+    aside {
+        display:none;
+    }
+    nav, section {
+        font-size:1.5em;
+    }
+    section {
+        width:94%;
+    }
+    nav ul {
+        float:left;
+        clear:none;
+        width:50%;
+    }
+    nav ul li {
+        float:none;
+    }
+}
+footer{
+    font-family: 'Titillium Web', sans-serif;
+	color:black;
+	text-decoration: none;
+	text-align: center;    
+}
+
+/* Responsive */
+
